@@ -14,6 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
 
     <style>
+      body:after {
+        content: "";
+        display: block;
+        background: url(design/mobile-design.jpg) no-repeat center;
+        position: fixed;
+        inset: 0;
+        opacity: 0.3;
+      }
       :root {
         --clr-white: hsl(0, 0%, 100%);
         --clr-light-gray: hsl(212, 45%, 89%);
@@ -72,34 +80,13 @@
         letter-spacing: 0.02rem;
         color: var(--clr-grayish-blue);
       }
-
-      /**/
-      .attribution {
-        position: fixed;
-        bottom: 1%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 11px;
-        text-align: center;
-        white-space: nowrap;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
     </style>
   </head>
   <body>
-    <div class="card">
+    <main class="card">
       <img src="./images/image-qr-code.png" alt="frontendmentor.io" />
       <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="http://gerardpastor.dev" target="_blank">Gerard Pastor</a>.
-    </div>
+    </main>
   </body>
 </html>
